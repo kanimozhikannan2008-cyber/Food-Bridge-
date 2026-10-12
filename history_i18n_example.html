@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>History</title>
+</head>
+<body>
+    <div class="history-actions-top">
+        <div class="hist-search-wrap">
+            <span class="hist-search-icon">🔍</span>
+            <input
+                type="text"
+                id="histSearchInput"
+                class="form-input hist-search-input"
+                data-i18n-ph="ph_hist_search"
+                placeholder="Search orders, batches, donors or couriers..."
+                oninput="filterHistoryView()"
+            >
+        </div>
+        <button
+            class="btn btn-outline-sm"
+            onclick="exportHistoryCsv()"
+            data-i18n="btn_export_csv"
+        >
+            📥 Export CSV
+        </button>
+    </div>
+</body>
+</html>
